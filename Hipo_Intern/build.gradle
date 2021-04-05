@@ -1,0 +1,49 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ext {
+        kotlin_version = "1.4.21"
+        nav_version = "2.3.3"
+        core_ktx = "1.3.2"
+        appcompat = "1.2.0"
+        material = "1.3.0"
+        constraintlayout = "2.0.4"
+        legacy_support_v4 = "1.0.0"
+        junit = "1.1.2"
+        espresso_core = "3.3.0"
+        retrofit_version = '2.9.0'
+        rx_java_version = '2.1.1'
+        rx_java_version_new = '2.4.0'
+        rx_java_version_room = '1.1.1'
+        lifecycle_ext_version = '2.1.1'
+        paging_version = "2.1.2"
+        glide_version = '4.11.0'
+        room_version = '2.2.6'
+        room_compiler = "1.1.0-alpha2"
+        prettytime = "4.0.1.Final"
+        favoritebutton="0.1.4"
+
+    }
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:4.1.2"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$nav_version"
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
