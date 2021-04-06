@@ -7,6 +7,5 @@ Internship
 <h4>USED TECHNOLOGIES</h4>
 -MVVM<br/>
 -LiveData<br/>
--Rxjava<br/>
 -RecyclerView<br/>
 -Fragments
